@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <button v-on:click="changeShow">点击</button>
+  <transition name="fade">
+    <div v-if="show">条件渲染</div>
+  </transition>
+</div>
+</body>
+<script src="./js/vue.js"></script>
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    show: true,
+    data: [
+      {id: 1, name: 1111},
+      {id: 2, name: 2222},
+      {id: 3, name: 3333},
+      {id: 4, name: 4444},
+    ],
+  },
+  watch: {
+    show: function () {
+      console.log(this.show)
+    }
+  },
+  methods: {
+    changeShow: function () {
+      // 这里不能使用箭头函数
+      this.show=!this.show;
+    }
+  }
+})
+</script>
+</html>
