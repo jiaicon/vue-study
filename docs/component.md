@@ -34,7 +34,7 @@ var app = new Vue({
     </ol>
 </div>
 ```
-> 事例地址: [Vue组件开发事例](https://github.com/jiaicon/vue-study/blob/master/basic/组件化应用构建.html)
+> 事例地址: [Vue组件开发事例](https://github.com/jiaicon/vue-study/blob/develop/basic/基础模板渲染.html)
   
 <script>
   
