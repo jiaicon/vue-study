@@ -3,7 +3,7 @@
 > 正式开发中，几乎都是使用组件进行开发。可以通过一个个小的组件，组装、复用形成大的项目
 
 下面是一个组件树  
-![组件树](./assert/imgs/components.png '组件树')
+![组件树](../assert/imgs/components.png '组件树')
 
 Vue中，组件实际就是一个个Vue实例
 ```javascript
@@ -34,7 +34,7 @@ var app = new Vue({
     </ol>
 </div>
 ```
-> 事例地址: [Vue组件开发事例](https://github.com/jiaicon/vue-study/blob/develop/basic/基础模板渲染.html)
+> 事例地址: [Vue组件开发事例](https://github.com/jiaicon/vue-study/blob/develop/basic/组件.html)
   
 <script>
   
