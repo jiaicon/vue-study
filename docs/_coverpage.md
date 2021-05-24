@@ -2,4 +2,4 @@
 
 > 学习Vue文档
 
-[起步](/README)
+[起步](/installation)

@@ -1,4 +1,8 @@
-- [first page](/README)
-- [second page](/second)
+- [安装](/installation)
+- 简单介绍
+  - [声明式渲染](/index)
+  - [条件与循环](/ifAndFor)
+  - [两个指令](/order)
+  - [组件化应用构建](/component)
 - sub page
   - [sub first page](/subFirst)
