@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件动态改变类名</title>
+  <style>
+    .class2 {
+      color: red;
+    }
+    .class3 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <my-component :class="[{class2: isActive}, 'class3']"></my-component>
+  点击切换: <input type="checkbox" @change="onChange">
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+  Vue.component('my-component', {
+    template: '<div class="class1">组件动态改变类名</div>'
+  });
+  new Vue({
+    el: '#app',
+    data: {
+      isActive: false,
+    },
+    methods: {
+      onChange: function () {
+        this.isActive=!this.isActive;
+      }
+    }
+  })
+</script>
+</html>

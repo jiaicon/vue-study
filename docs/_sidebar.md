@@ -36,6 +36,13 @@
 - Class 与 Style 绑定
   * [绑定 HTML Class](/classAndStyle/綁定HtmlClass#绑定HTMLClass)
     * [对象语法](/classAndStyle/綁定HtmlClass#对象语法)
+    * [数组语法](/classAndStyle/綁定HtmlClass#数组语法)
+    * [用在组件上](/classAndStyle/綁定HtmlClass#用在组件上)
+  * [绑定内联样式](/classAndStyle/绑定内联样式#绑定内联样式)
+    * [对象语法](/classAndStyle/绑定内联样式#对象语法)
+    * [数组语法](/classAndStyle/绑定内联样式#数组语法)
+    * [自动添加前缀](/classAndStyle/绑定内联样式#自动添加前缀)
+    * [多重值](/classAndStyle/绑定内联样式#多重值)
 
 
 
