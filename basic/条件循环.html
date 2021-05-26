@@ -18,6 +18,9 @@
   <transition name="fade">
     <div v-if="show">条件渲染</div>
   </transition>
+  <div v-for="item in data">
+    {{item.name}}
+  </div>
 </div>
 </body>
 <script src="./js/vue.js"></script>
