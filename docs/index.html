@@ -7,21 +7,35 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="assert/css/docsify-thenes-vue.css">
+
+  <link rel="stylesheet" href="./assert/css/docsify-sidebar-collapse.css" />
+  <link rel="stylesheet" href="./assert/css/docsify-sidebar-collapse-folder.css" />
   <!--vue.js跟原生的不一样，基于docsify的版本，使用原生的不可以-->
   <script src="./assert/js/vue.js"></script>
   <script src="assert/js/edit-on-github.js"></script>
+  <style>
+    .content {
+      max-width: 930px;
+      padding: 35px 0;
+      margin: 0 auto;
+      position: relative;
+      left: auto;
+    }
+    .sidebar .sidebar-nav {
+      padding-left: 1.5em;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
 </body>
-<script src="./assert/js/docsify.min.js"></script>
-<script src="./assert/js/docsify-plugins-search.js"></script>
 <script>
   window.$docsify = {
     name: '目录',
     repo: 'http://localhost:3000/#/?id=headline',
     coverpage: true,
     loadSidebar: '_sidebar',
+    subMaxLevel: 1,
     search: {
       maxAge: 86400000,
       paths: 'auto',
@@ -33,4 +47,10 @@
     ]
   }
 </script>
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="./assert/js/docsify-plugins-search.js"></script>
+<script src="./assert/js/axios.min.js"></script>
+<script src="./assert/js/lodash.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app-2">
+  <a v-bind:[attr]="link">百度一下</a>
+</div>
+</body>
+<script src="./js/vue.js"></script>
+<script>
+  new Vue({
+    el: '#app-2',
+    data: {
+      attr: 'href',
+      link: 'https://www.baidu.com',
+    }
+  })
+</script>
+</html>

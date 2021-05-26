@@ -1,4 +1,4 @@
-### #<a id="文本">文本</a>
+### # 文本<a id="文本"></a>
 
 > 数据绑定最常见的形式就是使用“Mustache”语法 (双大括号) 的文本插值：
 
@@ -14,7 +14,7 @@
 <span v-once>{{message}}</span>
 ```
 
-### #<a id="文本">HTML</a>
+### # HTML<a id="文本"></a>
 
 > 默认情况下Mustache会将HTML渲染成文本，为了渲染真的HTML，需要使用`v-html指令`
 
@@ -28,7 +28,7 @@
     <p>Using v-html directive: <span v-html="rawHtml"></span></p>
   </div>
   
-### #<a id="Attribute">Attribute</a>
+### # Attribute<a id="Attribute"></a>
 
 Mustache 语法不能作用在 HTML attribute 上，遇到这种情况应该使用 `v-bind` 指令：  
 > 即不能这么使用：  
@@ -44,7 +44,7 @@ Mustache 语法不能作用在 HTML attribute 上，遇到这种情况应该使�
     <button v-bind:disabled="isButtonDisabled2">可以使用</button>
   </div>  
 
-### #<a id="使用JavaScript表达式">使用JavaScript表达式</a>
+### # 使用JavaScript表达式<a id="使用JavaScript表达式"></a>
 
 > `JavaScript`原生的一些方法
 
